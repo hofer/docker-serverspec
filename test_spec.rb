@@ -2,7 +2,7 @@ require 'serverspec'
 
 set :backend, :exec
 
-describe docker_image 'quay.io/postit12/d-java8-mvn:01.00.04' do
+describe docker_image 'ubuntu:14.04' do
   it { should exist }
 
   # STIG Viewer Link: http://www.stigviewer.com/check/V-38437
